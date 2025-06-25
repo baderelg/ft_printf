@@ -165,7 +165,7 @@ My power is unquestionable because its structure is perfect.
 <table align="center">
   <tr>
     <td align="center">
-      <img src="https://i.imgur.com/TtKHde9.png" alt="Hierarchy" width="700">
+      <img src="https://i.imgur.com/D2ii9aY.png" alt="Hierarchy" width="530">
     </td>
   </tr>
   <tr>
@@ -179,7 +179,7 @@ My power is unquestionable because its structure is perfect.
 The family register that lays down the law for the entire organization
 
 - `ft_printf.c`
-This is the throne room. The `ft_printf` function surveys the format string and calls `handle_conversion` which dispatches commands to the appropriate underlings
+This is the throne room where `ft_printf` sets the stage. The `parse_and_print` function surveys the format string and calls `handle_conversion` which dispatches commands to the appropriate underlings
 
 - `ft_printf_utils.c`
 Forcing numbers and strings onto the stage
@@ -284,15 +284,16 @@ This signifies the absolute end of the show.
 
 Wanna know how the magic happens? *Fufufu...* Don't be naive, this isn't magic. It's control.
 
-### ➢ Pulling the strings: Main function
+### ➢ Pulling the strings - <code>ft_printf.c</code>
 
 The `ft_printf.c` is my throne room. From here I survey the format.
 
 1. I initialize my `va_list` gathering all the puppet arguments that were handed to me.
-2. I walk the format string, character by character.
-3. Whenever I see a `%` I know it's time for a performance. The character that follows will determine which puppet to control.
-4. I call upon my right-hand man `handle_conversion` to execute the command.
-5. I'll need to keep a precise count of every character that appears on the stage, for this will be the return value and the proof of my flawless execution.
+2. I call Pica `parse_and_print` to walk the format string, character by character.
+3. Whenever Pica sees a `%` he knows it's time for a performance. The character that follows will determine which puppet to control.
+4. Pica calls upon my right-hand man Vergo `handle_conversion` who dispatches the commands.\
+I'll need to keep a precise count of every character that appears on the stage, for this will be the return value and the proof of my flawless execution.
+5. I personnally bring down the curtain using `va_end`. The show is over.
 
 A king doesn't need to bother dirtying his hands with *cycling trivialities*. I have a family of loyal functions to handle the tasks handed over by `handle_conversion` from my main file.\
 My power is absolute because my organization is flawless.
@@ -445,6 +446,12 @@ So, when `handle_conversion` calls `va_arg` it advances the one and only roster.
 >
 > On other architectures though, `va_list` could be a simple pointer. Passing it by value would create a worthless copy and the program would fail.\
 > Passing `va_list *` ensures absolute control.
+
+### ➢ An incomplete order
+
+What happens when a fool uses the `%` but forgets specifying the performance that must follow?
+Am i to guess the puppets's roll ? I won't tolerate such insolence.\
+`parse_and_print` is trained to handle this dangling thread: If it finds the `%` at the end of the format with nothing following it, the performance is terminated.
 
 ### ➢ Flawless even in failure
 

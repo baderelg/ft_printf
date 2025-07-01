@@ -5,13 +5,9 @@
 <div align="center">
 
 [![42 School](https://img.shields.io/badge/42-Common_Core-blue)](https://42.fr/en/homepage/)
-[![Bonus](https://img.shields.io/badge/Bonus_❌-red)](https://github.com/baderelg/Ft_printf)
+[![Bonus](https://img.shields.io/badge/Bonus_❌-red)](https://github.com/baderelg/Ft_printf) \
+  <img src="https://i.imgur.com/W1vyk7j.png" width="100" alt="Validation confirmation on the 42 Intra @baelgadi - June 29th 2025">
 </div>
-
-> [!WARNING]
-> ![Eval](https://img.shields.io/badge/⏳_Awaiting_Evaluation-orange)\
-> The project has not been evaluated yet.\
-> Project files will be uploaded once the project is successfully completed.
 
 > [!NOTE]
 > <details>

@@ -4,23 +4,23 @@
 
 <div align="center">
 
-[![42 School](https://img.shields.io/badge/42-Common_Core-blue)](https://42.fr/en/homepage/)
-[![Bonus](https://img.shields.io/badge/Bonus_❌-red)](https://github.com/baderelg/Ft_printf) \
-  <img src="https://i.imgur.com/W1vyk7j.png" width="100" alt="Validation confirmation on the 42 Intra @baelgadi - June 29th 2025">
+[![42 School](https://img.shields.io/badge/Paris-blue?logo=42&logoColor=fff)](https://42.fr/en/homepage/)
+[![Bonus](https://img.shields.io/badge/❌_Bonus-red)](https://github.com/baderelg/Ft_printf) \
+<img src="https://i.imgur.com/W1vyk7j.png" width="100" alt="Validation confirmation on the 42 Intra @baelgadi - June 29th 2025">\
+[![Validation date](https://img.shields.io/date/1751205600?label=&style=for-the-badge&color=5cb85c)](https://github.com/baderelg/Ft_printf)
 </div>
 
 > [!NOTE]
 > <details>
 > <summary><strong>What is 42?</strong></summary>
 >   
-> > [42 School](https://42.fr/en/homepage/) is a coding school that throws the traditional rulebook out the window. It’s all about peer-to-peer learning and being project-driven. \
+> > [42 School](https://42.fr/en/homepage/) is a coding school that throws the traditional rulebook out the window. We are given a series of coding projects with clear objectives and we must figure out how to build them, basically, from scratch. \
 > > You learn by doing, tackling programming projects, and collaborating with fellow students to solve problems and evaluate each other's work. \
-> > You are given a project, a set of rules and objectives, and then it's up to you to figure out how to achieve the goal. \
-> > It really pushes you to learn how to learn. It's intense, challenging, but also very rewarding.
+> > It pushes you to learn how to learn. It may be intense, challenging, but it's also very rewarding.
 > </details>
 > 
 > <details>
-> <summary><strong>What is Ft_printf?</strong></summary>
+> <summary><strong>What is ft_printf?</strong></summary>
 > 
 > > `ft_printf` is a fundamental project at 42 School.\
 > > The objective is to recode the C function `printf()` from scratch with some limitations and while respecting the Norm V3 of 42.

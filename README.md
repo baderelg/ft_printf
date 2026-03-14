@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="https://i.imgur.com/RR3r3to.png" width="150" alt="Ft_printf Badge Without Bonus">
+  <img src="img/project-assets/badge.png" width="150" alt="Ft_printf Badge Without Bonus">
 </p>
 
 <div align="center">
 
 [![42 School](https://img.shields.io/badge/Paris-blue?logo=42&logoColor=fff)](https://42.fr/en/homepage/)
 [![Bonus](https://img.shields.io/badge/❌_Bonus-red)](https://github.com/baderelg/Ft_printf) \
-<img src="https://i.imgur.com/W1vyk7j.png" width="100" alt="Validation confirmation on the 42 Intra @baelgadi - June 29th 2025">\
+<img src="img/project-assets/score.png" width="100" alt="Validation confirmation on the 42 Intra @baelgadi - June 29th 2025">\
 [![Validation date](https://img.shields.io/date/1751205600?label=&style=for-the-badge&color=5cb85c)](https://github.com/baderelg/Ft_printf)
 </div>
 
@@ -14,9 +14,10 @@
 > <details>
 > <summary><strong>What is 42?</strong></summary>
 >   
-> > [42 School](https://42.fr/en/homepage/) is a coding school that throws the traditional rulebook out the window. We are given a series of coding projects with clear objectives and we must figure out how to build them, basically, from scratch. \
-> > You learn by doing, tackling programming projects, and collaborating with fellow students to solve problems and evaluate each other's work. \
-> > It pushes you to learn how to learn. It may be intense, challenging, but it's also very rewarding.
+> > [42 School](https://42.fr/en/homepage/) is a coding school focused on peer to peer learning and being project driven.\
+> > We are given a project, a set of rules and clear objectives, and then it's up to us to figure out how to achieve the goal.\
+> > It pushes you to learn how to learn. It may be intense and sometimes frustrating but the sense of accomplishment makes everything worth it.\
+> > Short term comfort is sacrificed for long term growth and versatility.
 > </details>
 > 
 > <details>
@@ -24,28 +25,19 @@
 > 
 > > `ft_printf` is a fundamental project at 42 School.\
 > > The objective is to recode the C function `printf()` from scratch with some limitations and while respecting the Norm V3 of 42.
-> > This project forces a deep understanding of variadic functions (functions that can take a variable number of arguments) and requires handling different data types through a single function.
+> > The main challenge is learning how variadic functions work and handling different data types through a single function.
 > > 
-> > <b>📏 Norminette</b></br>
-> > The Norm is a set of coding rules used in all 42 projects: 
-> > ```markdown
-> > - No more than 25 lines per function
-> > - No more than 5 function definitions per file
-> > - No ternary operators, no variable declarations after the first line of a function
-> > - No for loops
-> > - Function and file names must follow snake_case
-> > - and many other rules...
-> > ```  
 > </details>
 > 
 > To make the journey entertaining, I chose to approach the project through the eyes and voice of a fictional character.
 > 
 > <details>
-> <summary><strong>Why ?</strong></summary>
-> 
-> > Embodying a character while tackling a project isn't just entertaining, it forges stronger connections with the logic and makes it way more engaging.</br>
-> > When you try to express what you just learned through the voice of a fictional character, it helps cement the newly acquired knowledge and even adds new perspectives.</br>
-> > 
+> <summary><strong>Why?</strong></summary>
+>
+> > First and foremost, to avoid boredom. And while this started as just a weird habit, I quickly found it effective at keeping me engaged in the projects.\
+> > Embodying a character while tackling any exercise forges stronger connections with the logic and makes it truly engaging.\
+> > Sometimes, it even gives me new perspectives. Who would have thunk?
+> >
 > </details>
 > <details>
 > <summary><strong>Why Donquixote Doflamingo?</strong></summary>
@@ -58,7 +50,7 @@
 
 
 <p align="center">
-  <img src="https://i.imgur.com/fyeqrUD.png" alt="Doflamingo">
+  <img src="img/project-assets/banner.png" alt="Doflamingo">
 </p>
 
 > Welcome to the stage where nothing is random. Not the numbers, not the characters, not the format. I’m Joker and I built a system where every symbol obeys.\
@@ -73,16 +65,16 @@ Weaklings see a function that writes to the terminal. How quaint. I see an exhib
 
 Welcome to my world.
 
-# 🃏 Setting the stage
+# <img src="img/icons/0.png" height="35" alt="Icon"> Setting the stage
 
 The goal is to create a function that can take any puppet (a character, string, number) and force it to appear on the stage, exactly how you command.
 
 ```c
 int ft_printf(const char *format, ...);
 ```
-What's with the `. . .` you ask ? *Fufufu...* That's an endless line of actors waiting for you to pull the strings.
+What's with the `. . .` you ask? *Fufufu...* That's an endless line of actors waiting for you to pull the strings.
 
-## 🎭 The puppets on the stage - The formats
+## <img src="img/icons/1.png" height="30" alt="Icon"> The puppets on the stage - The formats
 
 My `ft_printf` commands a troupe of performers. Each one is a different kind of string, a unique way to manipulate the data.\
 These are the only ones you need to concern yourselves with for now:
@@ -90,47 +82,47 @@ These are the only ones you need to concern yourselves with for now:
 <table align="center">
   <tr>
     <th align="center"><code>%c</code></th>
-    <td align="center"><b>Character</b>, a single pawn</th>
-    <td align="center">I only command it to show itself</th>
+    <td align="center"><b>Character</b>, a single pawn</td>
+    <td align="center">I only command it to show itself</td>
   </tr>
   <tr>
     <th align="center"><code>%s</code></th>
-    <td align="center"><b>String</b>, a line of dialog</th>
-    <td align="center">I force it to speak. And if it's <code>NULL</code> then it will say exactly <code>"(null)"</code>... Pathetic</th>
+    <td align="center"><b>String</b>, a line of dialog</td>
+    <td align="center">I force it to speak. And if it's <code>NULL</code> then it will say exactly <code>"(null)"</code>... Pathetic</td>
   </tr>
   <tr>
     <th align="center"><code>%p</code></th>
-    <td align="center"><b>Pointer</b>, an address</th>
-    <td align="center">I command it to reveal its location in hexadecimal, prefixed with <code>0x</code>. A <code>NULL</code> pointer is exposed as <code>"(nil)"</code></th>
+    <td align="center"><b>Pointer</b>, an address</td>
+    <td align="center">I command it to reveal its location in hexadecimal, prefixed with <code>0x</code>. A <code>NULL</code> pointer is exposed as <code>"(nil)"</code></td>
    </tr>
   <tr>
     <th align="center"><code>%d</code><br><code>%i</code></th>
-    <td align="center"><b>Integer</b>, a number, positive or negative</th>
-    <td align="center">I'll make it display itself in base 10</th>
+    <td align="center"><b>Integer</b>, a number, positive or negative</td>
+    <td align="center">I'll make it display itself in base 10</td>
   </tr>
   <tr>
     <th align="center"><code>%u</code></th>
-    <td align="center"><b>Unsigned integer</b>, a number without the weakness of the sign</th>
-    <td align="center">It presents itself stripped of negativity</th>
+    <td align="center"><b>Unsigned integer</b>, a number without the weakness of the sign</td>
+    <td align="center">It presents itself stripped of negativity</td>
   </tr>
   <tr>
     <th align="center"><code>%x</code></th>
-    <td align="center"><b>Lowercase Hex</b>, a number in its base 16 form</th>
-    <td align="center">This one shows appropriate humility</th>
+    <td align="center"><b>Lowercase Hex</b>, a number in its base 16 form</td>
+    <td align="center">This one shows appropriate humility</td>
   </tr>
   <tr>
     <th align="center"><code>%X</code></th>
-    <td align="center"><b>Uppercase Hex</b>, a number in its base 16 form with delusions of grandeur</th>
-    <td align="center">And this one appears in all CAPS, a futile attempt to match my stature</th>
+    <td align="center"><b>Uppercase Hex</b>, a number in its base 16 form with delusions of grandeur</td>
+    <td align="center">And this one appears in all CAPS, a futile attempt to match my stature</td>
   </tr>
   <tr>
     <th align="center"><code>%%</code></th>
-    <td align="center"><b>Percent sign</b>, a simple symbol of obedience</th>
-    <td align="center">It simply prints itself</th>
+    <td align="center"><b>Percent sign</b>, a simple symbol of obedience</td>
+    <td align="center">It simply prints itself</td>
   </tr>
 </table>
 
-## 📜 The Celestial dragons' rules - Subject requirements
+## <img src="img/icons/2.png" height="30" alt="Icon"> The Celestial dragons' rules - Subject requirements
 
 *Fufufu...* There is a set of laughable restrictions designed to keep weaklings in check.\
 I adhere to them perfectly, not out of necessity mind you, but to showcase how effortlessly I can still operate, even within this pathetic cage.
@@ -154,14 +146,14 @@ These simple instruments are more than enough to build a masterpiece.
 The final performance must be sealed within a static library `libftprintf.a` using the power of the `ar` command.\
 Using `libtool` is forbidden, as if such a crutch would ever be necessary for people like us.
 
-## 🔺 A flawless hierarchy - Code architecture
+## <img src="img/icons/3.png" height="30" alt="Icon"> A flawless hierarchy - Code architecture
 
 My power is unquestionable because its structure is perfect.
 
 <table align="center">
   <tr>
     <td align="center">
-      <img src="https://i.imgur.com/D2ii9aY.png" alt="Hierarchy" width="530">
+      <img src="img/resources/hierarchy.png" alt="Hierarchy" width="530">
     </td>
   </tr>
   <tr>
@@ -186,12 +178,12 @@ Handling the work of hexadecimal and pointer conversions
 They believe limiting functions to 25 lines or 5 per file is a constraint...\
 I see it as a simple way to build a superior organization. *Fufufu...*
 
-# 🃏 The Performance
+# <img src="img/icons/0.png" height="35" alt="Icon"> The Performance
 
 True power is the ability to handle an unknown and unlimited number of puppets in a single performance.\
 That's the secret behind the `. . .` syntax: It's an invitation for any data to step onto the stage.
 
-## 🧵 The mechanism of control - Variadic argument handling
+## <img src="img/icons/4.png" height="30" alt="Icon"> The mechanism of control - Variadic argument handling
 
 But how does one control a crowd of anonymous actors ? This is where the true art lies.\
 Enter `<stdarg.h>`, my control center.
@@ -199,12 +191,12 @@ Enter `<stdarg.h>`, my control center.
 <table align="center">
   <tr>
     <td align="center">
-      <img src="https://i.imgur.com/dH01Moo.png" alt="Var var no Mi" width="1600">
+      <img src="img/resources/manga-panel.png" alt="Var var no Mi" width="1600">
     </td>
   </tr>
   <tr>
     <td align="center">
-        The stage is set (<code>va_start</code>), a puppet is chosen (<code>va_arg</code>) one at at a time, until the show concludes (<code>va_end</code>).<br><br>
+        The stage is set (<code>va_start</code>), a puppet is chosen (<code>va_arg</code>) one at a time, until the show concludes (<code>va_end</code>).<br><br>
     </td>
   </tr>
 </table>
@@ -276,7 +268,7 @@ This signifies the absolute end of the show.
   </tr>
 </table>
 
-## 👑 The inner workings of my Kingdom - Functions
+## <img src="img/icons/5.png" height="30" alt="Icon"> The inner workings of my Kingdom - Functions
 
 Wanna know how the magic happens? *Fufufu...* Don't be naive, this isn't magic. It's control.
 
@@ -289,7 +281,7 @@ The `ft_printf.c` is my throne room. From here I survey the format.
 3. Whenever Pica sees a `%` he knows it's time for a performance. The character that follows will determine which puppet to control.
 4. Pica calls upon my right-hand man Vergo `handle_conversion` who dispatches the commands.\
 I'll need to keep a precise count of every character that appears on the stage, for this will be the return value and the proof of my flawless execution.
-5. I personnally bring down the curtain using `va_end`. The show is over.
+5. I personally bring down the curtain using `va_end`. The show is over.
 
 A king doesn't need to bother dirtying his hands with *cycling trivialities*. I have a family of loyal functions to handle the tasks handed over by `handle_conversion` from my main file.\
 My power is absolute because my organization is flawless.
@@ -305,7 +297,7 @@ My power is absolute because my organization is flawless.
 <table align="center">
   <tr>
     <td align="center">
-      <img src="https://i.imgur.com/KNHOa56.png" alt="Diamante's army" width="900">
+      <img src="img/resources/diamante-army.png" alt="Diamante's army">
     </td>
   </tr>
   <tr>
@@ -321,7 +313,7 @@ int  ft_putchar_len(char c)
 <table align="center">
   <tr>
         <td align="center">
-      <img src="https://i.imgur.com/gnX4kuj.png" alt="Pink" width="120">
+      <img src="img/resources/senor.png" alt="Pink" width="120">
     </td>
     <td align="center"><b>Señor Pink</b> handles the fundamental work of displaying one character <code>%c</code>. Every complex display you'll see will be built upon his simple and reliable work.</td>
   </tr>
@@ -333,7 +325,7 @@ int  ft_putstr_len(char *str)
 <table align="center">
   <tr>
             <td align="center">
-      <img src="https://i.imgur.com/YPUjFIP.png" alt="Lao G" width="120">
+      <img src="img/resources/g.png" alt="Lao G" width="120">
     </td>
     <td align="center"><b>Lao G</b> handles the strings and releases the puppet's speech character by character. With his experience, he knows exactly what to do when he is passed a <code>NULL</code> string.</td>
   </tr>
@@ -345,9 +337,9 @@ int  ft_putnbr_len(int nbr)
 <table align="center">
   <tr>
             <td align="center">
-      <img src="https://i.imgur.com/dH4KBJD.png" alt="Baby 5 & Buffalo" width="120">
+      <img src="img/resources/buffalo-5.png" alt="Baby 5 & Buffalo" width="120">
     </td>
-    <td align="center">The chaotic duo of <b>Baby 5</b> and <b>Buffalo</b> are enough to deal with positive and negatives integers. Whether <code>%d</code> (decimal) or <code>%i</code> (integer) is passed, the result is the same.<br>They know how to deal with even the lowliest of creatures (<code>INT_MIN</code>).</th>
+    <td align="center">The chaotic duo of <b>Baby 5</b> and <b>Buffalo</b> are enough to deal with positive and negatives integers. Whether <code>%d</code> (decimal) or <code>%i</code> (integer) is passed, the result is the same.<br>They know how to deal with even the lowliest of creatures (<code>INT_MIN</code>).</td>
   </tr>
 </table>
 
@@ -357,9 +349,9 @@ int  ft_putunbr_len(unsigned int unbr)
 <table align="center">
   <tr>
             <td align="center">
-      <img src="https://i.imgur.com/FaHfbql.png" alt="Machvise" width="120">
+      <img src="img/resources/machvise.png" alt="Machvise" width="120">
     </td>
-    <td align="center"><b>Machvise</b> is dispatched with double the strength of Baby 5 and Buffalo, but he won't be dealing with negativity. I trust him to crush the task and print greater numbers.</th>
+    <td align="center"><b>Machvise</b> is dispatched with double the strength of Baby 5 and Buffalo, but he won't be dealing with negativity. I trust him to crush the task and print greater numbers.</td>
   </tr>
 </table>
 
@@ -368,7 +360,7 @@ int  ft_putunbr_len(unsigned int unbr)
 <table align="center">
   <tr>
     <td align="center">
-      <img src="https://i.imgur.com/lC6tsh4.png" alt="Trébol's army" width="900">
+      <img src="img/resources/trebol-army.png" alt="Trébol's army">
     </td>
   </tr>
   <tr>
@@ -384,9 +376,9 @@ int  ft_puthex_len(unsigned int unbr, char format)
 <table align="center">
   <tr>
             <td align="center">
-      <img src="https://i.imgur.com/hGVYWsp.png" alt="Jora" width="120">
+      <img src="img/resources/jora.png" alt="Jora" width="120">
     </td>
-    <td align="center"><b>Jōra</b> turns a simple number into the art of hexadecimal. With her power she refashions data into a masterpiece and either offers it a muted lowercase style (<code>%x</code>) or a grotesque uppercase one (<code>%X</code>).</th>
+    <td align="center"><b>Jōra</b> turns a simple number into the art of hexadecimal. With her power she refashions data into a masterpiece and either offers it a muted lowercase style (<code>%x</code>) or a grotesque uppercase one (<code>%X</code>).</td>
   </tr>
 </table>
 
@@ -396,9 +388,9 @@ int  ft_putaddr_len(unsigned long addr)
 <table align="center">
   <tr>
             <td align="center">
-      <img src="https://i.imgur.com/fZjNSM7.png" alt="Sugar" width="120">
+      <img src="img/resources/sugar.png" alt="Sugar" width="120">
     </td>
-    <td align="center"><b>Sugar</b> reveals the location of a puppet, its memory address. She first handles when a <code>NULL</code> pointer is sent her way. If not, she marks the target with a <code>0x</code> prefix and delegates the rest to her acolyte.</th>
+    <td align="center"><b>Sugar</b> reveals the location of a puppet, its memory address. She first handles when a <code>NULL</code> pointer is sent her way. If not, she marks the target with a <code>0x</code> prefix and delegates the rest to her acolyte.</td>
   </tr>
 </table>
 
@@ -412,13 +404,13 @@ static int  print_address(unsigned long nb)
 <table align="center">
   <tr>
             <td align="center">
-      <img src="https://i.imgur.com/2GLP2eq.png" alt="Toysoldier" width="120">
+      <img src="img/resources/sugar-toy.png" alt="Toy" width="120">
     </td>
-    <td align="center">Sugar's loyal <b>Toysoldier</b> carries out the dirty work of the conversion and printing. A perfect static subordinate with no will of its own.</th>
+    <td align="center"><b>Sugar's loyal toy</b> carries out the dirty work of the conversion and printing. A perfect static subordinate with no will of its own.</td>
   </tr>
 </table>
 
-## 💥 Controlled chaos - Error handling
+## <img src="img/icons/6.png" height="30" alt="Icon"> Controlled chaos - Error handling
 
 There are always vague rules... "undefined behaviour" they call them. Traps for fools.\
 A pirate defines his own reality and doesn't concern himself with these trivialities.
@@ -446,7 +438,7 @@ So, when `handle_conversion` calls `va_arg` it advances the one and only roster.
 ### ➢ An incomplete order
 
 What happens when a fool uses the `%` but forgets specifying the performance that must follow?
-Am i to guess the puppets's roll ? I won't tolerate such insolence.\
+Am I to guess the puppets's role? I won't tolerate such insolence.\
 `parse_and_print` is trained to handle this dangling thread: If it finds the `%` at the end of the format with nothing following it, the performance is terminated.
 
 ### ➢ Flawless even in failure
@@ -481,11 +473,9 @@ That’s a different game, the kind that once belonged to someone too fond of si
 I don’t waste time polishing output like it’s some fragile thing. I command it.\
 Right now, the strings are mine to pull and no one else touches the stage.
 
-
 <p align="center">
-  <img src="https://i.imgur.com/I4PYvah.png" width="300" alt="I want you to remember me smiling.">
+  <img src="img/extra/TBC.png" width="300" alt="I want you to remember me smiling.">
 </p>
-
 
 <hr>
 <p align="center">
